@@ -1,0 +1,40 @@
+/* =========================================================
+   style.css
+   Ditambahkan oleh Anggota 2 di branch "styling"
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+:root {
+  --background: #eef3f8;
+  --surface: rgba(255, 255, 255, 0.82);
+  --text: #172033;
+  --muted: #68758a;
+  --heading: #243b64;
+  --accent: #ff6b4a;
+  --accent-dark: #e95335;
+  --border: rgba(255, 255, 255, 0.75);
+  --shadow: 0 24px 60px rgba(40, 61, 92, 0.14);
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef3f8 0%, #dce8f3 52%, #f8eee7 100%);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px clamp(20px, 6vw, 88px);
+  background: rgba(255, 255, 255, 0.62);
+  border-bottom: 1px solid var(--border);
+  backdrop
